@@ -3,7 +3,8 @@ html, body{
     height: 100%;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     color: #fff;
     background: #181a1e;
     font-family: sans-serif;
