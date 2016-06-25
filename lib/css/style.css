@@ -125,6 +125,13 @@ td.win{
     color: rgba(228,121,3,1);
 }
 
+#autoTab{
+    display: none;
+}
+#autoBet_button{
+    color:black;
+}
+
 #bet_cashout_button {
     display: block;
     padding: 0;
