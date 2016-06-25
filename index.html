@@ -30,15 +30,15 @@
                 <a id="username"></a>
             </div>
             <div id="login">
-                <a href="https://www.moneypot.com/oauth/authorize?app_id=1280&response_type=token&state=Meh&redirect_uri=http://bustasatoshi.xyz">Login/Register</a>
+                <a href="https://www.moneypot.com/oauth/authorize?app_id=1280&response_type=token&state=Meh&redirect_uri=https://bustasatoshi.xyz">Login/Register</a>
             </div>
         </div>
 
         <div id="site_container" class="box">
             <div id="bust_box" class="box"><span>Waiting for bets...</span></div>
             <div id="control_box" class="box">
-                <div id="control_tabs"><div class="tab selected">MANUAL</div><div class="tab">AUTO</div></div>
-                <div class="ui form">
+                <div id="control_tabs"><div class="tab selected" id="manualTabButton">MANUAL</div><div class="tab" id="autoTabButton">AUTO</div></div>
+                <div class="ui form" id="manualTab">
                     <div class="field">
                         <label>Bet</label>
                         <div class="ui right labeled input">
@@ -53,6 +53,30 @@
                             <div class="ui basic label">x</div>
                         </div>
                     </div>
+                </div>
+                <div class="ui form" id="autoTab">
+                    <div class="field">
+                        <label>Base Bet</label>
+                        <div class="ui right labeled input">
+                            <input id="auto_bet_input" type="text" placeholder="Bet amount..." value="1" disabled>
+                            <div class="ui basic label">Bits</div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Auto Cash Out</label>
+                        <div class="ui right labeled input">
+                            <input id="auto_cashout_input" type="text" placeholder="Cashout..." value="2" disabled>
+                            <div class="ui basic label">x</div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>On loss, increase bet:</label>
+                        <div class="ui right labeled input">
+                            <input id="auto_increase_on_loss_input" type="text" placeholder="Increase on loss..." value="2" disabled>
+                            <div class="ui basic label">x</div>
+                        </div>
+                    </div>
+                    <button id="autoBet_button">Run</button>
                 </div>
                 <button id="bet_cashout_button">Login to bet!</button>
             </div>
@@ -77,3 +101,5 @@
         <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
     </body>
 </html>
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
